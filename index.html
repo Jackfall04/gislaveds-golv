@@ -3,137 +3,144 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gislaveds Golvbeläggning AB | Golv, Klinker & Måleri</title>
+<title>Gislaveds Golvbeläggning AB | Golv, Klinker & Måleri i Gislaved</title>
+<meta name="description" content="Golv, klinker och måleri i Gislaved sedan 1962. Professionell installation, parkettslipning och kompletta lösningar för hem och företag.">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;500&display=swap');
-
 body{
-    margin:0;
-    font-family:'Inter',sans-serif;
-    background:#0b0b0b;
-    color:#fff;
-    line-height:1.6;
+margin:0;
+font-family:'Inter',sans-serif;
+background:#0b0b0b;
+color:#fff;
+line-height:1.7;
 }
 
-/* HEADER */
 header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 60px;
-    background:#000;
-    position:sticky;
-    top:0;
-    z-index:1000;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#000;
+position:sticky;
+top:0;
+z-index:1000;
 }
 
-.logo{
-    font-family:'Montserrat',sans-serif;
-    font-weight:700;
-    font-size:20px;
+.logo img{
+height:55px;
 }
 
 nav a{
-    color:#fff;
-    text-decoration:none;
-    margin-left:30px;
-    font-weight:500;
+color:#fff;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
 }
 
 nav a:hover{
-    color:#ff6a00;
+color:#ff6a00;
 }
 
-.cta-btn{
-    background:#ff6a00;
-    color:#000;
-    padding:10px 20px;
-    border-radius:30px;
-    font-weight:600;
+.cta-nav{
+background:#ff6a00;
+color:#000;
+padding:10px 20px;
+border-radius:30px;
+font-weight:600;
 }
 
-/* HERO */
 .hero{
-    height:90vh;
-    background:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
-    display:flex;
-    align-items:center;
-    padding:0 80px;
+height:90vh;
+display:flex;
+align-items:center;
+padding:0 80px;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1582582429416-0c8d7a8c6b4e?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
 }
 
 .hero-content{
-    max-width:700px;
+max-width:700px;
 }
 
 .hero h1{
-    font-family:'Montserrat',sans-serif;
-    font-size:52px;
-    margin-bottom:20px;
+font-family:'Montserrat';
+font-size:54px;
+margin-bottom:20px;
 }
 
 .hero p{
-    font-size:18px;
-    margin-bottom:30px;
+font-size:18px;
+margin-bottom:30px;
 }
 
-/* SECTIONS */
+.btn{
+display:inline-block;
+background:#ff6a00;
+color:#000;
+padding:14px 28px;
+border-radius:30px;
+font-weight:600;
+text-decoration:none;
+}
+
 .section{
-    padding:100px 80px;
+padding:100px 60px;
+max-width:1200px;
+margin:auto;
 }
 
 .section h2{
-    font-family:'Montserrat',sans-serif;
-    font-size:36px;
-    margin-bottom:20px;
+font-family:'Montserrat';
+font-size:36px;
+margin-bottom:20px;
 }
 
-.section p{
-    max-width:800px;
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+margin-top:40px;
 }
 
-.section ul{
-    margin-top:20px;
+.card{
+background:#141414;
+padding:30px;
+border-radius:15px;
+border:1px solid #222;
 }
 
-.section li{
-    margin-bottom:10px;
+.card h3{
+margin-top:0;
 }
 
-/* FOOTER */
+.brands{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:30px;
+margin-top:40px;
+text-align:center;
+}
+
+.brands img{
+max-height:45px;
+filter:brightness(0) invert(1);
+}
+
 footer{
-    background:#000;
-    padding:40px 80px;
-    font-size:14px;
+background:#000;
+padding:50px 60px;
+text-align:center;
+color:#aaa;
+font-size:14px;
 }
 
-footer p{
-    margin:5px 0;
-}
-
-/* MOBILE */
 @media(max-width:900px){
-    header{
-        padding:20px;
-        flex-direction:column;
-    }
-
-    nav{
-        margin-top:10px;
-    }
-
-    .hero{
-        padding:40px;
-        height:auto;
-    }
-
-    .hero h1{
-        font-size:36px;
-    }
-
-    .section{
-        padding:60px 30px;
-    }
+header{padding:20px;flex-direction:column;}
+.hero{padding:60px 20px;height:auto;}
+.section{padding:60px 25px;}
+.hero h1{font-size:38px;}
 }
 </style>
 </head>
@@ -141,46 +148,102 @@ footer p{
 <body>
 
 <header>
-    <div class="logo">Gislaveds Golvbeläggning AB</div>
-    <nav>
-        <a href="index.html">Hem</a>
-        <a href="golv.html">Golv</a>
-        <a href="klinker.html">Klinker</a>
-        <a href="maleri.html">Måleri</a>
-        <a href="referenser.html">Referenser</a>
-        <a href="kontakt.html" class="cta-btn">Boka offert</a>
-    </nav>
+<div class="logo">
+<a href="index.html">
+<img src="logo.png" alt="Gislaveds Golvbeläggning AB">
+</a>
+</div>
+<nav>
+<a href="index.html">Hem</a>
+<a href="golv.html">Golv</a>
+<a href="klinker.html">Klinker</a>
+<a href="maleri.html">Måleri</a>
+<a href="referenser.html">Referenser</a>
+<a href="kontakt.html" class="cta-nav">Boka offert</a>
+</nav>
 </header>
 
 <section class="hero">
-    <div class="hero-content">
-        <h1>Premium Golv, Klinker & Måleri</h1>
-        <p>Vi levererar kompletta lösningar för hem och företag i Gislaved med omnejd – sedan 1962.</p>
-        <a href="kontakt.html" class="cta-btn">Kontakta oss idag</a>
-    </div>
+<div class="hero-content">
+<h1>Golv, Klinker & Måleri i Gislaved – Erfarenhet sedan 1962</h1>
+<p>
+Vi levererar professionella helhetslösningar för hem och företag.
+Från rådgivning och materialval till färdig installation.
+</p>
+<a href="kontakt.html" class="btn">Kontakta oss idag</a>
+</div>
 </section>
 
 <section class="section">
-    <h2>Över 60 års erfarenhet i branschen</h2>
-    <p>
-        Gislaveds Golvbeläggning AB har levererat professionella lösningar inom golv, klinker och måleri sedan 1962.
-        Vi kombinerar traditionellt hantverk med moderna material och metoder för att säkerställa högsta kvalitet i varje projekt.
-    </p>
+<h2>Över 60 års erfarenhet i branschen</h2>
+<p>
+Gislaveds Golvbeläggning AB har levererat kvalitetsarbete sedan 1962.
+Vi kombinerar traditionellt hantverk med moderna material och metoder för att säkerställa hållbara och estetiska resultat.
+</p>
 
-    <ul>
-        <li>✔ Certifierade hantverkare</li>
-        <li>✔ Arbete enligt branschregler</li>
-        <li>✔ Kvalitetssäkring i varje steg</li>
-        <li>✔ Långsiktiga kundrelationer</li>
-    </ul>
+<div class="grid">
+<div class="card">
+<h3>Golv</h3>
+<p>Parkett, laminat, vinyl, textilgolv och professionell parkettslipning.</p>
+<a href="golv.html" class="btn">Läs mer</a>
+</div>
+
+<div class="card">
+<h3>Klinker & Våtrum</h3>
+<p>Installation av kakel, klinker och våtrumslösningar enligt branschregler.</p>
+<a href="klinker.html" class="btn">Läs mer</a>
+</div>
+
+<div class="card">
+<h3>Måleri</h3>
+<p>Invändigt och utvändigt måleri för både privatpersoner och företag.</p>
+<a href="maleri.html" class="btn">Läs mer</a>
+</div>
+</div>
+</section>
+
+<section class="section">
+<h2>Varför välja oss?</h2>
+
+<div class="grid">
+<div class="card">
+<h3>✔ Certifierade hantverkare</h3>
+<p>Vi arbetar enligt gällande branschstandard och säkerställer korrekt installation.</p>
+</div>
+
+<div class="card">
+<h3>✔ Kvalitetsmaterial</h3>
+<p>Vi samarbetar med ledande leverantörer inom golv- och byggbranschen.</p>
+</div>
+
+<div class="card">
+<h3>✔ Personlig rådgivning</h3>
+<p>Vi hjälper dig att hitta rätt lösning för ditt projekt och din budget.</p>
+</div>
+
+<div class="card">
+<h3>✔ Lokal expertis</h3>
+<p>Ett etablerat företag i Gislaved med lång erfarenhet och starkt rykte.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<h2>Våra Leverantörer</h2>
+
+<div class="brands">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Kahrs_logo.png" alt="Kährs">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Tarkett_logo.svg" alt="Tarkett">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Forbo_logo.svg" alt="Forbo">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/BerryAlloc_logo.png" alt="BerryAlloc">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Gerflor_logo.png" alt="Gerflor">
+</div>
 </section>
 
 <footer>
-    <p><strong>Gislaveds Golvbeläggning AB</strong></p>
-    <p>📞 0371-130 90</p>
-    <p>✉ info@gislaveds-golv.se</p>
-    <p>📍 Järnvägsgatan 2, 332 30 Gislaved</p>
-    <p>Butik: 09.00–18.00 | Kontor: 07.00–16.00</p>
+<p>© 2026 Gislaveds Golvbeläggning AB</p>
+<p>📞 0371-130 90</p>
+<p>📍 Järnvägsgatan 2, 332 30 Gislaved</p>
 </footer>
 
 </body>
