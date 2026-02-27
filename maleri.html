@@ -5,85 +5,138 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Måleri i Gislaved | Inomhus & Utomhusmålning</title>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;500&display=swap');
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
+<style>
 body{
-    margin:0;
-    font-family:'Inter',sans-serif;
-    background:#0b0b0b;
-    color:#fff;
-    line-height:1.7;
+margin:0;
+font-family:'Inter',sans-serif;
+background:#0b0b0b;
+color:#fff;
+line-height:1.7;
 }
 
 header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 60px;
-    background:#000;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#000;
 }
 
-.logo{
-    font-family:'Montserrat';
-    font-weight:700;
-}
+.logo img{height:60px;}
 
 nav a{
-    color:#fff;
-    text-decoration:none;
-    margin-left:30px;
+color:#fff;
+text-decoration:none;
+margin-left:30px;
 }
 
-nav a:hover{ color:#ff6a00; }
-
-.cta{
-    background:#ff6a00;
-    color:#000;
-    padding:10px 20px;
-    border-radius:30px;
-    font-weight:600;
-}
+nav a:hover{color:#ff6a00;}
 
 .hero{
-    padding:120px 80px;
-    background:#111;
+height:65vh;
+background:url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+display:flex;
+align-items:center;
+padding:0 80px;
+position:relative;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.65);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+max-width:750px;
 }
 
 .hero h1{
-    font-family:'Montserrat';
-    font-size:48px;
-    margin-bottom:20px;
+font-family:'Montserrat';
+font-size:48px;
+margin-bottom:20px;
 }
 
 .section{
-    padding:100px 80px;
-    border-bottom:1px solid #222;
+padding:100px 80px;
+border-bottom:1px solid #222;
 }
 
 .section h2{
-    font-family:'Montserrat';
-    font-size:34px;
-    margin-bottom:20px;
+font-family:'Montserrat';
+font-size:36px;
+margin-bottom:40px;
 }
 
-.section h3{
-    margin-top:40px;
-    color:#ff6a00;
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:40px;
 }
 
-ul{
-    margin-top:15px;
+.card{
+background:#111;
+border-radius:16px;
+overflow:hidden;
+transition:0.3s;
+}
+
+.card img{
+width:100%;
+height:240px;
+object-fit:cover;
+}
+
+.card-content{
+padding:30px;
+}
+
+.card:hover{
+transform:translateY(-8px);
+background:#151515;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.feature{
+background:#111;
+padding:30px;
+border-radius:12px;
+}
+
+.cta-section{
+padding:120px 80px;
+text-align:center;
+background:#111;
+}
+
+.cta-btn{
+background:#ff6a00;
+color:#000;
+padding:15px 30px;
+border-radius:30px;
+font-weight:600;
+text-decoration:none;
+display:inline-block;
+margin-top:20px;
 }
 
 footer{
-    background:#000;
-    padding:40px 80px;
-    font-size:14px;
+background:#000;
+padding:40px 80px;
 }
 
 @media(max-width:900px){
-.hero,.section{padding:60px 25px;}
+.hero,.section,.cta-section{padding:60px 25px;}
 }
 </style>
 </head>
@@ -91,67 +144,110 @@ footer{
 <body>
 
 <header>
-<div class="logo">Gislaveds Golvbeläggning AB</div>
+<div class="logo">
+<img src="logo.png">
+</div>
 <nav>
 <a href="index.html">Hem</a>
 <a href="golv.html">Golv</a>
-<a href="klinker.html">Klinker</a>
+<a href="klinker.html">Kakel</a>
 <a href="maleri.html">Måleri</a>
-<a href="referenser.html">Referenser</a>
-<a href="kontakt.html" class="cta">Boka offert</a>
+<a href="tapet.html">Tapet</a>
 </nav>
 </header>
 
 <section class="hero">
-<h1>Professionellt måleri i Gislaved</h1>
-<p>Vi utför inomhus- och utomhusmålning med noggrant förarbete och kvalitetsprodukter från ledande leverantörer. Resultatet blir hållbart, snyggt och långvarigt.</p>
+<div class="hero-content">
+<h1>Professionellt Måleri</h1>
+<p>Inomhus, utomhus och fasadmålning – utfört med precision och rätt produkter.</p>
+</div>
 </section>
 
 <section class="section">
 <h2>Inomhusmålning</h2>
-<p>Rätt färg och rätt glans gör stor skillnad i ett rum. Vi hjälper dig att skapa rätt känsla – från moderna, matta ytor till tåliga väggar i utsatta miljöer.</p>
 
-<h3>Våra inomhusfärger</h3>
-<ul>
-<li><strong>Ambiance Xtramatt</strong> – Djup, helmatt yta med minimal reflex.</li>
-<li><strong>Ambiance Silkesmatt</strong> – Mjuk lyster och slitstark yta.</li>
-<li><strong>Perform+ Easy2Clean</strong> – Extra tvättbar, perfekt för kök och hall.</li>
-<li><strong>Ambiance SuperFinish</strong> – För snickerier, dörrar och detaljer.</li>
-<li><strong>Ambiance Sky</strong> – Helmatt takfärg med jämnt resultat.</li>
-</ul>
+<div class="grid">
 
-<h3>Nordsjö Visualizer & Colour Tester</h3>
-<p>Med digitala verktyg kan du testa kulörer direkt i ditt rum innan du bestämmer dig. Vi erbjuder även provburkar för att säkerställa rätt val.</p>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Väggar & Tak</h3>
+<p>Släta, jämna ytor med rätt grundarbete för lång hållbarhet.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Dörrar & Snickerier</h3>
+<p>Perfekt finish på lister, karmar och detaljer.</p>
+</div>
+</div>
+
+</div>
 </section>
 
 <section class="section">
 <h2>Utomhusmålning</h2>
-<p>Fasadmålning kräver rätt förarbete och rätt färgtyp. Vi säkerställer att din fasad skyddas mot väder och vind samtidigt som huset får ett lyft.</p>
 
-<h3>Färgsättningsråd</h3>
-<ul>
-<li>Tänk på helhetsintrycket och omgivningen.</li>
-<li>Utomhusfärger upplevs annorlunda än inomhus.</li>
-<li>Välj gärna något dovare kulör för fasad.</li>
-<li>Testmåla alltid innan slutgiltigt beslut.</li>
-</ul>
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1599422314072-9f00f1a0e1df?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Fasadmålning</h3>
+<p>Skydda och förnya din fasad med rätt färgsystem.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Färgsättning</h3>
+<p>Vi hjälper dig hitta rätt kulör för husets helhetsintryck.</p>
+</div>
+</div>
+
+</div>
 </section>
 
 <section class="section">
 <h2>Varför välja oss?</h2>
-<ul>
-<li>✔ Över 60 års erfarenhet</li>
-<li>✔ Certifierade målare</li>
-<li>✔ Noggrant förarbete</li>
-<li>✔ Kvalitetsprodukter</li>
-<li>✔ Personlig rådgivning</li>
-</ul>
+
+<div class="features">
+
+<div class="feature">
+<h3>Rätt Förarbete</h3>
+<p>Spackling, slipning och grundning för bästa slutresultat.</p>
+</div>
+
+<div class="feature">
+<h3>Kvalitetsprodukter</h3>
+<p>Vi arbetar med ledande färgleverantörer för maximal hållbarhet.</p>
+</div>
+
+<div class="feature">
+<h3>Lång erfarenhet</h3>
+<p>Över 60 års erfarenhet i branschen.</p>
+</div>
+
+<div class="feature">
+<h3>Precision</h3>
+<p>Vi lämnar alltid ett rent, noggrant och professionellt resultat.</p>
+</div>
+
+</div>
+</section>
+
+<section class="cta-section">
+<h2>Dags att måla om?</h2>
+<p>Kontakta oss för rådgivning eller kostnadsfri offert.</p>
+<a href="kontakt.html" class="cta-btn">Kontakta oss</a>
 </section>
 
 <footer>
 <p><strong>Gislaveds Golvbeläggning AB</strong></p>
 <p>0371-130 90</p>
-<p>Järnvägsgatan 2, 332 30 Gislaved</p>
 </footer>
 
 </body>
