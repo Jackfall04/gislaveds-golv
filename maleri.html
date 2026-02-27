@@ -1,178 +1,98 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Måleri & Målare i Gislaved | Gislaveds Golvbeläggning</title>
+<meta name="description" content="Professionella målare i Gislaved. Invändig och utvändig målning, fasadmålning, tapetsering och snickerimålning. Kontakta oss för offert.">
 
-    <html><head><meta charset='UTF-8'><title>Måleri</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;500&display=swap');
-
-body{
-    margin:0;
-    font-family:'Inter',sans-serif;
-    background:#0b0b0b;
-    color:#fff;
-    line-height:1.7;
-}
-
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:25px 80px;
-    background:rgba(0,0,0,0.9);
-    position:sticky;
-    top:0;
-    backdrop-filter:blur(10px);
-    z-index:1000;
-}
-
-.logo img{height:65px;}
-
-nav a{
-    color:#fff;
-    text-decoration:none;
-    margin-left:30px;
-    font-weight:500;
-}
-
+body{margin:0;font-family:'Inter',sans-serif;background:#0b0b0b;color:#fff;line-height:1.7;}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 60px;background:#000;}
+header img{height:60px;}
+nav a{color:#fff;text-decoration:none;margin-left:30px;}
 nav a:hover{color:#ff6a00;}
-
-.cta{
-    background:#ff6a00;
-    color:#000;
-    padding:12px 24px;
-    border-radius:30px;
-    font-weight:600;
-}
-
 .hero{
-    height:95vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    background:
-    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
-    url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover no-repeat;
+height:60vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url('https://images.unsplash.com/photo-1581578731548-c64695cc6952') center/cover;
 }
-
-.hero h1{
-    font-family:'Montserrat';
-    font-size:60px;
-    font-weight:800;
-    margin-bottom:20px;
-}
-
-.hero p{
-    font-size:20px;
-    color:#ccc;
-    max-width:750px;
-    margin:auto;
-}
-
-.section{
-    padding:120px 80px;
-    max-width:1300px;
-    margin:auto;
-}
-
-.section h2{
-    font-family:'Montserrat';
-    font-size:38px;
-    margin-bottom:30px;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:50px;
-    margin-top:50px;
-}
-
-.card{
-    background:#141414;
-    padding:40px;
-    border-radius:20px;
-    border:1px solid #222;
-    transition:0.4s;
-}
-
-.card:hover{
-    transform:translateY(-12px);
-    border-color:#ff6a00;
-    box-shadow:0 25px 60px rgba(255,106,0,.15);
-}
-
-.card img{
-    width:100%;
-    border-radius:15px;
-    margin-bottom:20px;
-}
-
-.btn{
-    display:inline-block;
-    margin-top:30px;
-    background:#ff6a00;
-    color:#000;
-    padding:16px 32px;
-    border-radius:40px;
-    font-weight:600;
-    text-decoration:none;
-}
-
-footer{
-    background:#000;
-    padding:60px;
-    text-align:center;
-    color:#888;
-}
-
-form input, form textarea{
-    width:100%;
-    padding:12px;
-    margin:10px 0;
-    border:none;
-    border-radius:8px;
-}
-
-form button{
-    background:#ff6a00;
-    border:none;
-    padding:14px 30px;
-    border-radius:30px;
-    font-weight:600;
-}
-
-@media(max-width:900px){
-    header{padding:20px;}
-    .section{padding:80px 20px;}
-    .hero h1{font-size:40px;}
-}
+.hero h1{font-family:'Montserrat';font-size:48px;}
+.section{padding:80px 60px;max-width:1200px;margin:auto;}
+.section h2{font-family:'Montserrat';font-size:36px;margin-bottom:20px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;}
+.card{background:#141414;padding:30px;border-radius:16px;border:1px solid #222;}
+.card img{width:100%;border-radius:12px;margin-bottom:15px;}
+.btn{display:inline-block;margin-top:20px;background:#ff6a00;color:#000;padding:14px 28px;border-radius:30px;font-weight:600;text-decoration:none;}
+footer{background:#000;padding:60px;text-align:center;color:#aaa;}
 </style>
-</head><body>
-    
+</head>
+
+<body>
+
 <header>
-<div class="logo"><img src="logo.png"></div>
+<img src="logo.png" alt="Gislaveds Golvbeläggning AB">
 <nav>
 <a href="index.html">Hem</a>
 <a href="golv.html">Golv</a>
 <a href="klinker.html">Klinker</a>
 <a href="maleri.html">Måleri</a>
-<a href="referenser.html">Referenser</a>
-<a href="kontakt.html" class="cta">Boka offert</a>
+<a href="kontakt.html">Kontakt</a>
 </nav>
 </header>
 
-    <section class="hero"><div><h1>Måleri</h1></div></section>
-    <section class="section">
-<h2>Måleri & Tapetsering</h2>
-<p>Invändigt och utvändigt måleri med fokus på finish och hållbarhet.
-Vi erbjuder färgsättning, dekorativa väggar och tapetsering med premiumkänsla.</p>
+<section class="hero">
+<h1>Måleri i Gislaved</h1>
 </section>
-    
+
+<section class="section">
+<h2>Invändig & Utvändig Målning</h2>
+<p>Vi erbjuder professionellt måleri i Gislaved för både privatpersoner och företag. Med noggrant underarbete och kvalitetsprodukter säkerställer vi ett hållbart och estetiskt resultat.</p>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828">
+<h3>Invändig målning</h3>
+<p>Målning av väggar, tak, snickerier och dörrar med fokus på precision och finish.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154">
+<h3>Fasadmålning</h3>
+<p>Skydd och förnyelse av fasader för lång hållbarhet och förbättrad estetik.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581579185169-36b6fce8b82d">
+<h3>Tapetsering</h3>
+<p>Professionell tapetsering med noggrann passning och detaljfokus.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<h2>Varför välja oss som målare?</h2>
+<ul>
+<li>Över 60 års erfarenhet</li>
+<li>Kvalitetsprodukter</li>
+<li>Professionell finish</li>
+<li>Tydlig offert och tidsplan</li>
+</ul>
+
+<a href="kontakt.html" class="btn">Begär offert</a>
+</section>
+
 <footer>
-<p><strong>Gislaveds Golvbeläggning AB</strong></p>
-<p>📞 0371-130 90 | ✉️ info@gislavedsgolv.se</p>
-<p>Järnvägsgatan 2, 332 30 Gislaved</p>
-<p>Butik: 09.00–18.00 | Kontor: 07.00–16.00</p>
+<p>© 2026 Gislaveds Golvbeläggning AB</p>
 </footer>
 
-    </body></html>
-    
+</body>
+</html>
