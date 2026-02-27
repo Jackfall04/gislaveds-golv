@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tapet & Tapetsering i Gislaved</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+body{
+margin:0;
+font-family:'Inter',sans-serif;
+background:#0b0b0b;
+color:#fff;
+line-height:1.7;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#000;
+}
+
+.logo img{height:60px;}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:30px;
+}
+
+nav a:hover{color:#ff6a00;}
+
+.hero{
+height:60vh;
+background:url('https://images.unsplash.com/photo-1582582429416-2b2a6e5a3fbc?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+display:flex;
+align-items:center;
+padding:0 80px;
+position:relative;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.6);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+max-width:700px;
+}
+
+.hero h1{
+font-family:'Montserrat';
+font-size:48px;
+}
+
+.section{
+padding:100px 80px;
+border-bottom:1px solid #222;
+}
+
+.section h2{
+font-family:'Montserrat';
+font-size:34px;
+margin-bottom:40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:40px;
+}
+
+.card{
+background:#111;
+border-radius:16px;
+overflow:hidden;
+transition:0.3s;
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-content{
+padding:25px;
+}
+
+.card:hover{
+transform:translateY(-8px);
+background:#151515;
+}
+
+.steps{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:40px;
+}
+
+.step{
+background:#111;
+padding:30px;
+border-radius:12px;
+}
+
+.cta-section{
+padding:120px 80px;
+text-align:center;
+background:#111;
+}
+
+.cta-btn{
+background:#ff6a00;
+color:#000;
+padding:15px 30px;
+border-radius:30px;
+font-weight:600;
+text-decoration:none;
+display:inline-block;
+margin-top:20px;
+}
+
+footer{
+background:#000;
+padding:40px 80px;
+}
+
+@media(max-width:900px){
+.hero,.section,.cta-section{padding:60px 25px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">
+<img src="logo.png">
+</div>
+<nav>
+<a href="index.html">Hem</a>
+<a href="golv.html">Golv</a>
+<a href="klinker.html">Kakel</a>
+<a href="maleri.html">Måleri</a>
+<a href="tapet.html">Tapet</a>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Tapet & Inredning</h1>
+<p>Ge dina väggar liv med rätt tapet. Vi hjälper dig från val till färdigt resultat.</p>
+</div>
+</section>
+
+<section class="section">
+<h2>Tapeter för alla rum</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600607687644-c7f34b5060c3?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Fondväggar</h3>
+<p>Skapa karaktär och djup med mönster eller struktur.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Heltäckande</h3>
+<p>En harmonisk och varm känsla i hela rummet.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1588854337221-4cf9fa96059c?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Modern Design</h3>
+<p>Trendiga mönster och färger som lyfter din inredning.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<h2>Verktyg & Tillbehör</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1603899122314-7b0c5dff3a76?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Tapetverktyg</h3>
+<p>Tapetkniv, lod, borstar och professionella verktyg.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1591030434469-4e6f1c6a8f32?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Lim & Primer</h3>
+<p>Rätt lim för rätt tapet – vi guidar dig.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<h2>Steg för steg – Tapetsering</h2>
+
+<div class="steps">
+
+<div class="step">
+<h3>1. Förarbete</h3>
+<p>Spackla, slipa och grundmåla för bästa resultat.</p>
+</div>
+
+<div class="step">
+<h3>2. Mät & Skär</h3>
+<p>Mät tapetvåder noggrant och lägg till marginal.</p>
+</div>
+
+<div class="step">
+<h3>3. Limma & Sätt upp</h3>
+<p>Applicera rätt mängd lim och sätt våden rakt.</p>
+</div>
+
+<div class="step">
+<h3>4. Skär rent</h3>
+<p>Använd vass kniv för perfekt avslut.</p>
+</div>
+
+</div>
+</section>
+
+<section class="cta-section">
+<h2>Behöver du hjälp med tapetsering?</h2>
+<p>Vi erbjuder professionell tapetsering med perfekt finish.</p>
+<a href="kontakt.html" class="cta-btn">Boka offert</a>
+</section>
+
+<footer>
+<p><strong>Gislaveds Golvbeläggning AB</strong></p>
+<p>0371-130 90</p>
+</footer>
+
+</body>
+</html>
