@@ -3,149 +3,140 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gislaveds Golvbeläggning AB | Golv, Klinker & Måleri</title>
+<title>Gislaveds Golvbeläggning AB | Golv, Kakel, Tapet & Måleri</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 body{
-    margin:0;
-    font-family:'Inter',sans-serif;
-    background:#0b0b0b;
-    color:#fff;
-    line-height:1.7;
+margin:0;
+font-family:'Inter',sans-serif;
+background:#0b0b0b;
+color:#fff;
+line-height:1.7;
 }
 
-/* HEADER */
 header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 60px;
-    background:#000;
-    position:sticky;
-    top:0;
-    z-index:1000;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#000;
+position:sticky;
+top:0;
+z-index:1000;
 }
 
-.logo img{
-    height:65px;
-}
+.logo img{height:65px;}
 
 nav a{
-    color:#fff;
-    text-decoration:none;
-    margin-left:30px;
-    font-weight:500;
+color:#fff;
+text-decoration:none;
+margin-left:30px;
+font-weight:500;
 }
 
-nav a:hover{
-    color:#ff6a00;
-}
+nav a:hover{color:#ff6a00;}
 
 .cta{
-    background:#ff6a00;
-    color:#000;
-    padding:10px 20px;
-    border-radius:30px;
-    font-weight:600;
+background:#ff6a00;
+color:#000;
+padding:10px 20px;
+border-radius:30px;
+font-weight:600;
 }
 
 /* HERO */
 .hero{
-    height:90vh;
-    background:url('https://images.unsplash.com/photo-1582582494700-06a9e9a63c27?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
-    display:flex;
-    align-items:center;
-    padding:0 80px;
+height:90vh;
+background:url('https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+display:flex;
+align-items:center;
+padding:0 80px;
+position:relative;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.55);
 }
 
 .hero-content{
-    max-width:700px;
+position:relative;
+max-width:700px;
+z-index:2;
 }
 
 .hero h1{
-    font-family:'Montserrat',sans-serif;
-    font-size:52px;
-    margin-bottom:20px;
+font-family:'Montserrat';
+font-size:52px;
+margin-bottom:20px;
 }
 
-.hero p{
-    font-size:18px;
-    margin-bottom:30px;
-}
-
-/* SECTIONS */
 .section{
-    padding:100px 80px;
+padding:100px 80px;
 }
 
 .section h2{
-    font-family:'Montserrat';
-    font-size:36px;
-    margin-bottom:20px;
+font-family:'Montserrat';
+font-size:36px;
+margin-bottom:40px;
 }
 
-/* GRID */
 .grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:40px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:40px;
 }
 
 .card{
-    background:#111;
-    padding:40px;
-    border-radius:12px;
-    transition:0.3s;
+background:#111;
+border-radius:16px;
+overflow:hidden;
+transition:0.4s;
+}
+
+.card img{
+width:100%;
+height:240px;
+object-fit:cover;
+}
+
+.card-content{
+padding:30px;
 }
 
 .card:hover{
-    background:#151515;
+transform:translateY(-8px);
+background:#151515;
 }
 
-/* SUPPLIERS */
 .suppliers{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-    gap:40px;
-    align-items:center;
-    margin-top:40px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:40px;
+align-items:center;
+text-align:center;
 }
 
 .suppliers img{
-    max-width:140px;
-    filter:brightness(0) invert(1);
-    opacity:0.8;
-    transition:0.3s;
+max-width:140px;
+margin-bottom:15px;
 }
 
-.suppliers img:hover{
-    opacity:1;
-}
-
-/* FOOTER */
 footer{
-    background:#000;
-    padding:40px 80px;
-    font-size:14px;
+background:#000;
+padding:40px 80px;
+font-size:14px;
 }
 
-/* MOBILE */
 @media(max-width:900px){
-.hero{
-    padding:40px;
-    height:auto;
-}
-.section{
-    padding:60px 25px;
-}
-header{
-    flex-direction:column;
-}
-nav{
-    margin-top:15px;
-}
+.hero{padding:40px;height:auto;}
+.section{padding:60px 25px;}
+header{flex-direction:column;}
+nav{margin-top:15px;}
 }
 </style>
 </head>
@@ -154,23 +145,22 @@ nav{
 
 <header>
 <div class="logo">
-<img src="logo.png" alt="Gislaveds Golvbeläggning AB">
+<img src="logo.png" alt="Gislaveds Golvbeläggning">
 </div>
-
 <nav>
 <a href="index.html">Hem</a>
 <a href="golv.html">Golv</a>
-<a href="klinker.html">Klinker</a>
+<a href="klinker.html">Kakel</a>
 <a href="maleri.html">Måleri</a>
-<a href="referenser.html">Referenser</a>
+<a href="tapet.html">Tapet</a>
 <a href="kontakt.html" class="cta">Boka offert</a>
 </nav>
 </header>
 
 <section class="hero">
 <div class="hero-content">
-<h1>Professionell Golvläggning i Gislaved</h1>
-<p>Över 60 års erfarenhet av golv, kakel, klinker och måleri. Vi levererar kvalitet från rådgivning till färdigt resultat.</p>
+<h1>Premium Golv & Inredning i Gislaved</h1>
+<p>Trägolv, klinker, tapet och måleri – professionellt utfört sedan 1962.</p>
 <a href="kontakt.html" class="cta">Kontakta oss idag</a>
 </div>
 </section>
@@ -178,35 +168,71 @@ nav{
 <section class="section">
 <h2>Våra Tjänster</h2>
 <div class="grid">
-<div class="card">
-<h3>Golv</h3>
-<p>Trägolv, laminat, vinyl, våtrum, trappor och golvvård. Certifierad installation enligt branschstandard.</p>
-</div>
-<div class="card">
-<h3>Kakel & Klinker</h3>
-<p>Plattsättning för badrum, kök och våtrum. Säker installation med korrekt tätskikt.</p>
-</div>
-<div class="card">
-<h3>Måleri</h3>
-<p>Inomhus- och utomhusmålning med noggrant förarbete och kvalitetsprodukter.</p>
-</div>
-</div>
-</section>
 
-<section class="section">
-<h2>Om oss</h2>
-<p>Gislaveds Golvbeläggning AB grundades 1962. Idag drivs företaget av Tomas och Caroline Olsson. Med 11 anställda och verksamhet i hela GGVV-regionen erbjuder vi professionella lösningar för både privatpersoner och företag. Kvalitet, kompetens och långsiktiga relationer är grunden i allt vi gör.</p>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600585152915-d208bec867a1?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Golv</h3>
+<p>Parkett, laminat, vinyl, trappor och golvvård med certifierad installation.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1595514535415-dae64d49c4c7?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Kakel & Klinker</h3>
+<p>Plattsättning för badrum och kök enligt branschregler.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Måleri</h3>
+<p>Inomhus- och utomhusmålning med perfekt finish.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1582582429416-2b2a6e5a3fbc?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Tapet</h3>
+<p>Tapetsering, rådgivning och kvalitetsprodukter för alla rum.</p>
+</div>
+</div>
+
+</div>
 </section>
 
 <section class="section">
 <h2>Våra Leverantörer</h2>
 <div class="suppliers">
-<a href="https://www.kahrs.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/04/K%C3%A4hrs_logo.svg"></a>
-<a href="https://www.tarkett.se" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Tarkett_logo.svg"></a>
-<a href="https://www.forbo.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Forbo_logo.svg"></a>
-<a href="https://www.berryalloc.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/57/BerryAlloc_logo.png"></a>
-<a href="https://www.gerflor.se" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Gerflor_logo.svg"></a>
-<a href="https://www.wicanders.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Wicanders_logo.png"></a>
+
+<div>
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/04/K%C3%A4hrs_logo.svg">
+<p>Kährs</p>
+</div>
+
+<div>
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Tarkett_logo.svg">
+<p>Tarkett</p>
+</div>
+
+<div>
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Forbo_logo.svg">
+<p>Forbo</p>
+</div>
+
+<div>
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Gerflor_logo.svg">
+<p>Gerflor</p>
+</div>
+
+<div>
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/57/BerryAlloc_logo.png">
+<p>Berry Alloc</p>
+</div>
+
 </div>
 </section>
 
