@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gislaveds Golvbeläggning AB | Golv, Kakel & Måleri</title>
+<title>Gislaveds Golvbeläggning AB | Golv, Klinker & Måleri</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
@@ -15,6 +15,8 @@ body{
     color:#fff;
     line-height:1.7;
 }
+
+/* HEADER */
 header{
     display:flex;
     justify-content:space-between;
@@ -25,15 +27,22 @@ header{
     top:0;
     z-index:1000;
 }
+
 .logo img{
-    height:55px;
+    height:65px;
 }
+
 nav a{
     color:#fff;
     text-decoration:none;
     margin-left:30px;
+    font-weight:500;
 }
-nav a:hover{color:#ff6a00;}
+
+nav a:hover{
+    color:#ff6a00;
+}
+
 .cta{
     background:#ff6a00;
     color:#000;
@@ -41,54 +50,102 @@ nav a:hover{color:#ff6a00;}
     border-radius:30px;
     font-weight:600;
 }
+
+/* HERO */
 .hero{
     height:90vh;
-    background:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+    background:url('https://images.unsplash.com/photo-1582582494700-06a9e9a63c27?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
     display:flex;
     align-items:center;
     padding:0 80px;
 }
-.hero h1{
-    font-family:'Montserrat';
-    font-size:52px;
+
+.hero-content{
+    max-width:700px;
 }
+
+.hero h1{
+    font-family:'Montserrat',sans-serif;
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+/* SECTIONS */
 .section{
     padding:100px 80px;
 }
+
 .section h2{
     font-family:'Montserrat';
     font-size:36px;
     margin-bottom:20px;
 }
+
+/* GRID */
 .grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:40px;
 }
+
 .card{
     background:#111;
     padding:40px;
     border-radius:12px;
+    transition:0.3s;
 }
+
+.card:hover{
+    background:#151515;
+}
+
+/* SUPPLIERS */
 .suppliers{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-    gap:30px;
+    gap:40px;
     align-items:center;
+    margin-top:40px;
 }
+
 .suppliers img{
     max-width:140px;
     filter:brightness(0) invert(1);
     opacity:0.8;
+    transition:0.3s;
 }
+
+.suppliers img:hover{
+    opacity:1;
+}
+
+/* FOOTER */
 footer{
     background:#000;
     padding:40px 80px;
     font-size:14px;
 }
+
+/* MOBILE */
 @media(max-width:900px){
-.hero{padding:40px;height:auto;}
-.section{padding:60px 25px;}
+.hero{
+    padding:40px;
+    height:auto;
+}
+.section{
+    padding:60px 25px;
+}
+header{
+    flex-direction:column;
+}
+nav{
+    margin-top:15px;
+}
 }
 </style>
 </head>
@@ -97,8 +154,9 @@ footer{
 
 <header>
 <div class="logo">
-<img src="logo.png" alt="Gislaveds Golvbeläggning">
+<img src="logo.png" alt="Gislaveds Golvbeläggning AB">
 </div>
+
 <nav>
 <a href="index.html">Hem</a>
 <a href="golv.html">Golv</a>
@@ -110,9 +168,9 @@ footer{
 </header>
 
 <section class="hero">
-<div>
-<h1>Premium Golv, Kakel & Måleri i Gislaved</h1>
-<p>Över 60 års erfarenhet av golvläggning, plattsättning och måleri. Vi levererar kvalitet – från rådgivning till färdigt resultat.</p>
+<div class="hero-content">
+<h1>Professionell Golvläggning i Gislaved</h1>
+<p>Över 60 års erfarenhet av golv, kakel, klinker och måleri. Vi levererar kvalitet från rådgivning till färdigt resultat.</p>
 <a href="kontakt.html" class="cta">Kontakta oss idag</a>
 </div>
 </section>
@@ -122,22 +180,22 @@ footer{
 <div class="grid">
 <div class="card">
 <h3>Golv</h3>
-<p>Trägolv, laminat, vinyl, våtrum, golvvård och trappor.</p>
+<p>Trägolv, laminat, vinyl, våtrum, trappor och golvvård. Certifierad installation enligt branschstandard.</p>
 </div>
 <div class="card">
 <h3>Kakel & Klinker</h3>
-<p>Certifierad plattsättning för badrum, kök och våtrum.</p>
+<p>Plattsättning för badrum, kök och våtrum. Säker installation med korrekt tätskikt.</p>
 </div>
 <div class="card">
 <h3>Måleri</h3>
-<p>Inomhus- och utomhusmålning med kvalitetsprodukter.</p>
+<p>Inomhus- och utomhusmålning med noggrant förarbete och kvalitetsprodukter.</p>
 </div>
 </div>
 </section>
 
 <section class="section">
 <h2>Om oss</h2>
-<p>Gislaveds Golvbeläggning AB grundades 1962. Idag drivs företaget av Tomas och Caroline Olsson. Vi är 11 anställda och arbetar i hela GGVV-regionen. Med lång erfarenhet, certifierade hantverkare och fokus på kvalitet bygger vi långsiktiga relationer.</p>
+<p>Gislaveds Golvbeläggning AB grundades 1962. Idag drivs företaget av Tomas och Caroline Olsson. Med 11 anställda och verksamhet i hela GGVV-regionen erbjuder vi professionella lösningar för både privatpersoner och företag. Kvalitet, kompetens och långsiktiga relationer är grunden i allt vi gör.</p>
 </section>
 
 <section class="section">
