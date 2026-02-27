@@ -3,87 +3,118 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Golv i Gislaved | Parkett, Laminat, Vinyl & Våtrum</title>
+<title>Golv i Gislaved | Trägolv, Laminat, Vinyl & Våtrum</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;500&display=swap');
-
 body{
-    margin:0;
-    font-family:'Inter',sans-serif;
-    background:#0b0b0b;
-    color:#fff;
-    line-height:1.7;
+margin:0;
+font-family:'Inter',sans-serif;
+background:#0b0b0b;
+color:#fff;
+line-height:1.7;
 }
 
 header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 60px;
-    background:#000;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#000;
 }
 
-.logo{
-    font-family:'Montserrat',sans-serif;
-    font-weight:700;
-}
+.logo img{height:60px;}
 
 nav a{
-    color:#fff;
-    text-decoration:none;
-    margin-left:30px;
+color:#fff;
+text-decoration:none;
+margin-left:30px;
 }
 
-nav a:hover{ color:#ff6a00; }
-
-.cta{
-    background:#ff6a00;
-    color:#000;
-    padding:10px 20px;
-    border-radius:30px;
-    font-weight:600;
-}
+nav a:hover{color:#ff6a00;}
 
 .hero{
-    padding:120px 80px;
-    background:#111;
+height:60vh;
+background:url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+display:flex;
+align-items:center;
+padding:0 80px;
+position:relative;
 }
 
-.hero h1{
-    font-family:'Montserrat';
-    font-size:48px;
-    margin-bottom:20px;
+.hero::after{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.6);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+max-width:700px;
 }
 
 .section{
-    padding:100px 80px;
-    border-bottom:1px solid #222;
+padding:100px 80px;
+border-bottom:1px solid #222;
 }
 
 .section h2{
-    font-family:'Montserrat';
-    font-size:34px;
-    margin-bottom:20px;
+font-family:'Montserrat';
+font-size:36px;
+margin-bottom:40px;
 }
 
-.section h3{
-    margin-top:40px;
-    color:#ff6a00;
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:40px;
 }
 
-ul{
-    margin-top:15px;
+.card{
+background:#111;
+border-radius:16px;
+overflow:hidden;
+}
+
+.card img{
+width:100%;
+height:240px;
+object-fit:cover;
+}
+
+.card-content{
+padding:30px;
+}
+
+.suppliers{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:40px;
+}
+
+.supplier{
+background:#111;
+padding:30px;
+border-radius:12px;
+display:flex;
+gap:20px;
+align-items:flex-start;
+}
+
+.supplier img{
+width:120px;
 }
 
 footer{
-    background:#000;
-    padding:40px 80px;
-    font-size:14px;
+background:#000;
+padding:40px 80px;
 }
 
 @media(max-width:900px){
-    .hero,.section{padding:60px 25px;}
+.hero,.section{padding:60px 25px;}
 }
 </style>
 </head>
@@ -91,95 +122,100 @@ footer{
 <body>
 
 <header>
-<div class="logo">Gislaveds Golvbeläggning AB</div>
+<div class="logo">
+<img src="logo.png">
+</div>
 <nav>
 <a href="index.html">Hem</a>
 <a href="golv.html">Golv</a>
-<a href="klinker.html">Klinker</a>
+<a href="klinker.html">Kakel</a>
 <a href="maleri.html">Måleri</a>
-<a href="referenser.html">Referenser</a>
-<a href="kontakt.html" class="cta">Boka offert</a>
+<a href="tapet.html">Tapet</a>
 </nav>
 </header>
 
 <section class="hero">
-<h1>Professionella golv i Gislaved</h1>
-<p>Vi levererar och installerar parkett, trägolv, laminat, vinyl, textilgolv och våtrumslösningar. Över 60 års erfarenhet och certifierade hantverkare enligt branschregler.</p>
+<div class="hero-content">
+<h1>Professionell Golvläggning</h1>
+<p>Trägolv, laminat, vinyl, våtrum och golvvård – installerat enligt branschstandard.</p>
+</div>
 </section>
 
 <section class="section">
-<h2>Parkett & Trägolv</h2>
-<p>Parkettgolv är uppbyggt i flera lager med ett slitstarkt ytskikt i ädelträ. Det ger ett levande och naturligt golv med lång livslängd. Trä är ett levande material som påverkas av ljus och tid – något som ger karaktär och personlighet.</p>
+<h2>Våra Golvtyper</h2>
 
-<h3>Populära träslag</h3>
-<ul>
-<li><strong>Ek</strong> – Tidlös klassiker med stort utbud.</li>
-<li><strong>Ask</strong> – Ljust och livfullt med tydlig ådring.</li>
-<li><strong>Lönn</strong> – Hårt och slitstarkt, ljus ton.</li>
-<li><strong>Bok</strong> – Elegant och varm.</li>
-<li><strong>Björk</strong> – Ljus, något mjukare träslag.</li>
-<li><strong>Valnöt</strong> – Djup och exklusiv ton.</li>
-</ul>
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1588854337118-1c6f5e9d1c54?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Trägolv & Parkett</h3>
+<p>Naturligt, levande material som åldras vackert. Ek, ask, lönn, bok, björk och valnöt.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Laminat</h3>
+<p>Slitstarkt och prisvärt golv med realistisk träkänsla.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1598300056398-6a0b04f29f17?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Vinyl & Plastgolv</h3>
+<p>Tyst, tåligt och perfekt för kök, hall och barnrum.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1599422314072-9f00f1a0e1df?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Våtrum</h3>
+<p>Certifierad installation av våtrumsmatta och tätskikt.</p>
+</div>
+</div>
+
+</div>
 </section>
 
 <section class="section">
-<h2>Laminatgolv</h2>
-<p>Ett slitstarkt och lättskött alternativ som kombinerar design och funktion. Perfekt för hem med hög belastning. Enkelt att lägga och mycket tåligt mot slitage.</p>
-</section>
+<h2>Våra Leverantörer</h2>
 
-<section class="section">
-<h2>Vinylgolv</h2>
-<p>Komfortabelt, tyst och lätt att underhålla. Passar perfekt i hall, kök och barnrum.</p>
+<div class="suppliers">
 
-<h3>Typer av vinyl</h3>
-<ul>
-<li><strong>Vinylclick</strong> – Klicksystem, enkel installation.</li>
-<li><strong>Plastmatta</strong> – Slitstark klassiker.</li>
-<li><strong>Korkvinyl</strong> – Extra komfort och ljuddämpning.</li>
-<li><strong>Linoleum</strong> – Miljövänligt alternativ.</li>
-</ul>
-</section>
+<div class="supplier">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/04/K%C3%A4hrs_logo.svg">
+<div>
+<h3>Kährs</h3>
+<p>Marknadsledande inom parkettgolv med fokus på kvalitet och hållbarhet.</p>
+</div>
+</div>
 
-<section class="section">
-<h2>Våtrum</h2>
-<p>Vi är GVK-auktoriserade och utför tätskikt och installation enligt gällande branschregler.</p>
+<div class="supplier">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Tarkett_logo.svg">
+<div>
+<h3>Tarkett</h3>
+<p>Brett sortiment av trägolv, vinyl och laminat för alla miljöer.</p>
+</div>
+</div>
 
-<h3>Våtrumsmatta</h3>
-<ul>
-<li>Lättskött och hygieniskt</li>
-<li>Prisvärt alternativ</li>
-<li>Säkert och vattentätt</li>
-</ul>
-</section>
+<div class="supplier">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Gerflor_logo.svg">
+<div>
+<h3>Gerflor</h3>
+<p>Specialist på tåliga och innovativa vinylgolv.</p>
+</div>
+</div>
 
-<section class="section">
-<h2>Textilgolv</h2>
-<p>Skapar värme, komfort och bättre ljudmiljö. Perfekt för sovrum och kontor.</p>
-</section>
-
-<section class="section">
-<h2>Golvvård</h2>
-<p>Rätt skötsel förlänger livslängden. Vi erbjuder rådgivning och behandling för alla golvtyper.</p>
-</section>
-
-<section class="section">
-<h2>Våra leverantörer</h2>
-<ul>
-<li>Kährs</li>
-<li>Tarkett</li>
-<li>Forbo</li>
-<li>BerryAlloc</li>
-<li>Gerflor</li>
-<li>Wicanders</li>
-<li>Kjellbergs</li>
-<li>Golvlabia</li>
-</ul>
+</div>
 </section>
 
 <footer>
 <p><strong>Gislaveds Golvbeläggning AB</strong></p>
 <p>0371-130 90</p>
-<p>Järnvägsgatan 2, 332 30 Gislaved</p>
 </footer>
 
 </body>
